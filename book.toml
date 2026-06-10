@@ -5,15 +5,15 @@ src = "src"
 title = "有田市ふるさと納税 農家様向けマニュアル"
 
 [output.html]
-additional-css = ["atlas-common/theme/mdbook-admonish.css"]
-additional-js = []
+theme = ".theme_build"
 git-repository-url = "https://github.com/totototo0526/arida-farmer"
 edit-url-template = "https://github.com/totototo0526/arida-farmer/edit/main/{path}"
-theme = ".theme_build"
+additional-css = ["atlas-common/theme/css/atlas-custom.css", "src/custom.css"]
+additional-js = ["atlas-common/theme/atlas-alerts.js", "atlas-common/theme/elasticlunr-jp.js"]
 
-[preprocessor.admonish]
-command = "mdbook-admonish"
-assets_version = "3.0.2"
+[output.html.fold]
+enable = true
+level = 0
 
 [build]
 build-dir = "book"
