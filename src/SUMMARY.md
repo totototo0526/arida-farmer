@@ -3,6 +3,7 @@
 - [はじめに](chapter_1.md)
 
 - [はじめの一歩（基本操作）]()
+    - [ホーム画面への追加（ショートカット）](operation/00_shortcut.md)
     - [ログインとメニュー画面](operation/01_login_menu.md)
     - [アカウント情報の確認と変更](operation/02_account.md)
 
