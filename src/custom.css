@@ -1,0 +1,25 @@
+/* 農家向けサイトではGitHubリンク・編集リンク・印刷ボタンを完全に非表示にする */
+.right-buttons a[title="Git repository"],
+.right-buttons a[title="Suggest an edit"],
+.right-buttons a[title="Print this book"] {
+    display: none !important;
+}
+
+/* 
+ * スマホ時のメニュー展開ボタン（ハンバーガーアイコン）を分かりやすくする
+ * アイコンの右側に「メニュー」という文字を追加します
+ */
+@media (max-width: 900px) {
+    #mdbook-sidebar-toggle::after {
+        content: "メニュー";
+        font-size: 14px;
+        margin-left: 8px;
+        vertical-align: middle;
+        font-weight: bold;
+    }
+    
+    /* ヘッダーのタイトルを少し小さくして、メニュー文字と被らないようにする */
+    .menu-title {
+        font-size: 1.2rem;
+    }
+}
