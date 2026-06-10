@@ -23,3 +23,14 @@
         font-size: 1.2rem;
     }
 }
+
+/* フッターの会社名を「有田市」に上書きする（共通テンプレートを汚さないためのCSSトリック） */
+.atlas-footer .footer-content p {
+    font-size: 0;
+    color: transparent;
+}
+.atlas-footer .footer-content p::after {
+    content: "© 2026 有田市 ふるさと納税担当";
+    font-size: 14px;
+    color: var(--fg); /* テーマの文字色に合わせる */
+}
