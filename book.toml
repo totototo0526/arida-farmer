@@ -1,7 +1,6 @@
 [book]
 authors = ["Atlas Team"]
 language = "ja"
-multilingual = false
 src = "src"
 title = "有田市ふるさと納税 農家様向けマニュアル"
 
