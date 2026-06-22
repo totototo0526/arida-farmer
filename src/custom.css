@@ -1,7 +1,6 @@
-/* 農家向けサイトではGitHubリンク・編集リンク・印刷ボタンを完全に非表示にする */
+/* 農家向けサイトではGitHubリンク・編集リンクを非表示にする（印刷ボタンは表示） */
 .right-buttons a[title="Git repository"],
-.right-buttons a[title="Suggest an edit"],
-.right-buttons a[title="Print this book"] {
+.right-buttons a[title="Suggest an edit"] {
     display: none !important;
 }
 
